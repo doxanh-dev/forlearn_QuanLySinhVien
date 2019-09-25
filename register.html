@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Quản lý sinh viên</title>
-	<style>
-		* {
-		box-sizing: border-box;
-		}
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Quản lý sinh viên</title>
+		<style>
+			* {
+			box-sizing: border-box;
+			}
 
-		body {
-		font-family: Arial, Helvetica, sans-serif;
-		}
+			body {
+			font-family: Arial, Helvetica, sans-serif;
+			}
 
-		/* Style the header */
-		header {
-		background-color: #666;
-		padding: 30px;
-		text-align: center;
-		font-size: 35px;
-		color: white;
-		}
+			/* Style the header */
+			header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+			}
 
-		/* Create two columns/boxes that floats next to each other */
-		nav {
-		float: left;
-		width: 10%;
-		height: 500px; /* only for demonstration, should be removed */
-		background: #ccc;
-		padding: 20px;
-		}
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			float: left;
+			width: 10%;
+			height: 500px; /* only for demonstration, should be removed */
+			background: #ccc;
+			padding: 20px;
+			}
 
-		/* Style the list inside the menu */
-		nav ul {
-		list-style-type: none;
-		padding: 0;
-		}
+			/* Style the list inside the menu */
+			nav ul {
+			list-style-type: none;
+			padding: 0;
+			}
 
-		article {
-		float: left;
-		padding: 20px;
-		width: 90%;
-		background-color: #f1f1f1;
-		height: 500px; /* only for demonstration, should be removed */
-		}
+			article {
+			float: left;
+			padding: 20px;
+			width: 90%;
+			background-color: #f1f1f1;
+			height: 500px; /* only for demonstration, should be removed */
+			}
 
-		/* Clear floats after the columns */
-		section:after {
-		content: "";
-		display: table;
-		clear: both;
-		}
+			/* Clear floats after the columns */
+			section:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
 
-		/* Style the footer */
-		footer {
-		background-color: #777;
-		padding: 10px;
-		text-align: center;
-		color: white;
-		}
+			/* Style the footer */
+			footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+			}
 
-		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-		@media (max-width: 600px) {
-		nav, article {
-			width: 100%;
-			height: auto;
-		}
-		}
-	</style>
-  </head>
-  <body>
-    <header>
-      <h1>Quản lý sinh viên</h1>
-    </header>
-	<section>
-	<nav>
-		<ul>
-		<h4> Danh sách </h4>
-		<li><a href="register.html">Thêm</a></li>
-		<li><a href="edit_student.html">Sửa</a></li>
-		<li><a href="delete.html">Xóa</a></li>
-		</ul>
-	</nav>
-	<article>
-	  <h3> Đăng ký sinh viên mới</h3>
-	  Full name:<br />
-      <input type="text" name="fullname" />
-      <input type="submit" /><br />
-      ID_student:<br />
-      <input type="number" name="idstudent" />
-      <input type="submit" /><br />
-      ID_class:<br />
-      <input type="number" name="idclass" />
-      <input type="submit" /><br />
-      ID_classname:<br />
-      <input type="text" name="idclassname" />
-      <input type="submit" /><br />
-      ID_classname:<br />
-      <input type="text" name="idclassname" />
-      <input type="submit" /><br />
-      DoB:<br />
-      <input type="date" name="bday" />
-      <input type="submit" /><br />
-      ID_Address:<br />
-      <input type="text" name="idaddress" />
-	  <input type="submit" /><br />
-	</article>
-  </body>
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+				height: auto;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		<h1>Quản lý sinh viên</h1>
+		</header>
+		<section>
+		<nav>
+			<ul>
+			<h4> Danh sách </h4>
+			<li><a href="register.html">Thêm</a></li>
+			<li><a href="edit_student.html">Sửa</a></li>
+			<li><a href="delete.html">Xóa</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h3> Đăng ký sinh viên mới</h3>
+			Full name:<br>
+			<input type="text" name="fullname" />
+			<br>
+			ID_student:<br>
+			<input type="number" name="idstudent" />
+			<br>
+			ID_class:<br>
+			<input type="number" name="idclass" />
+			<br>
+			ID_classname:<br>
+			<input type="text" name="idclassname" />
+			<br />
+			ID_classname:<br>
+			<input type="text" name="idclassname" />
+			<br>
+			DoB:<br>
+			<input type="date" name="bday" />
+			<br />
+			ID_Address:<br>
+			<input type="text" name="idaddress" /><br>
+			<input type="submit" /><br>
+
+		</article>
+	</body>
+	<footer>
+		<a href="index.html">Quay lại trang chủ</a>
+	</footer>
 </html>
